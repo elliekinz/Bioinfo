@@ -14,7 +14,7 @@ read.file <- function(file) {
 overall.boxplot <- function(file, data) {
   png(file=file, width = 1000, height = 600)
   new_data <- data[2:dim(data)[2]]
-  boxplot(new_data, names = c(substr(colnames(new_data),4,7)))
+  boxplot(new_data, names = c(substr(colnames(new_data),1,7)))
   dev.off()
 }
 
@@ -29,7 +29,7 @@ plot.boxplot <- function(data) {
 }
 
 hist.p.value.to.file <- function(content, n, file, title, axis.name) {
-  png(file=file)
+  png(file=file, width = 1000, height = 600)
   hist(as.numeric(content), main = title, xlab = axis.name, xaxt='n', breaks = length(as.numeric(content)[!is.na(content)])/2)
   axis(side=1, at=seq(0,1,0.05), labels=seq(0,1,0.05))
   dev.off()
