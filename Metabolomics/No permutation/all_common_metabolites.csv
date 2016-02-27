@@ -1,0 +1,101 @@
+   3;FAME C22:0
+   2;Ornithine_(3TMS)_587245.62_PRED
+   2;Galactopyranoside,_1-O-methyl-,_beta-_(4TMS)_598177.19_TRUE
+   2;Galactaric_acid_(6TMS)_658294.38_TRUE
+   2;Allose_(1MEOX)_(5TMS)_MP_577900.56_PRED
+   1;similar_to_Diethanolamine_(2TMS)_335362.44_PRED
+   1;similar_to_Asparagine_Derivate_505075.09_PRED
+   1;Viburnitol_(5TMS)_635711.5_PRED
+   1;Valeric_acid,_3-hydroxy-3-methyl-_(1TMS)_235895.11_PRED
+   1;Uridine_5'-monophosphate_(5TMS)_995880.69_TRUE
+   1;Undecanoic_acid_(1TMS)_480425.62_TRUE
+   1;Tyrosine (3TMS) [MP-1.1]
+   1;Tropine_(1TMS)_336960.03_PRED
+   1;Tridecanoic_acid_586610.62_PRED
+   1;Threonine,_O-methyl-,_L-_(2TMS)_334293.72_PRED
+   1;Tetradecanoic_acid_(1TMS)_616607.75_PRED
+   1;Tetradecan-1-ol,_n-_(1TMS)_592555.94_PRED
+   1;Tartaric_acid_(4TMS)_511834.44_TRUE
+   1;Spermine_(6TMS)_883354.38_TRUE
+   1;Siloxane_596806.25_PRED
+   1;Shikimic_acid_(4TMS)_586124.94_TRUE
+   1;Serine,_O-acetyl-_(2TMS)_410213.62_TRUE
+   1;Serine (4TMS)
+   1;Serine (3TMS) [MP-1.1]
+   1;Pyroglutamate (2TMS) [MP-1.1]
+   1;Psicose_(1MEOX)_(5TMS)_BP_573563.38_TRUE
+   1;Proline [MP-1.1]
+   1;Pimelic_acid,_2,6-diamino-_(4TMS)_654293.81_TRUE
+   1;Phosphoenolpyruvic_acid_(3TMS)_528164.19_TRUE
+   1;Phenylpyruvic_acid_(2TMS)_575884_TRUE
+   1;Pentadecane,_n-_462471.41_PRED
+   1;Oxalic_acid_(2TMS)_236929.91_PRED
+   1;Orthophosphate
+   1;Ornithine_(4TMS)_572079.81_PRED
+   1;Ornithine (4TMS) [MP-1.1]
+   1;NicotiaNaNmine_(4TMS)_902113.62_PRED
+   1;NicotiNaNmide (1TMS) [MP-1.1]
+   1;Mevalonic_acid-1,5-lactone_(1TMS)_454636.47_TRUE
+   1;Mannitol|Sorbitol (6TMS) [MP-1.1]
+   1;Malic_acid_(3TMS)_442513.44_TRUE
+   1;Maleamic_acid,_N-ethyl-_(2TMS)_459686.66_TRUE
+   1;Malate (3TMS) [MP-1.1]
+   1;Levulinic_acid,_5-amino-_(1MEOX)_(3TMS)_MP_574704.06_TRUE
+   1;Levulinic_acid,_5-amino-_(1MEOX)_(3TMS)_BP_591715.44_TRUE
+   1;Leucine (2TMS) [MP-1.1]
+   1;Isoleucine_(2TMS)_318827.91_TRUE
+   1;Isocitric_acid_(4TMS)_597989.19_TRUE
+   1;Inosine_(4TMS)_904803.88_TRUE
+   1;Hypoxanthine_(2TMS)_659841.12_TRUE
+   1;Hypotaurine_(3TMS)_509415.53_TRUE
+   1;Homoserine_lactone_(2TMS)_458933.88_PRED
+   1;Homoserine_(4TMS)_510930.09_TRUE
+   1;Homoserine_(2TMS)_380616.94_PRED
+   1;Homocysteine_(2TMS)_506276.72_PRED
+   1;Hexadecanoic_acid_(1TMS)_697328.75_TRUE
+   1;Heptacosanoic_acid,_n-_(1TMS)_1053682.38_PRED
+   1;Guanosine-5-monophosphate_(6TMS)_1065235.12_TRUE
+   1;Glycylglycine_(4TMS)_591933.56_TRUE
+   1;Glycerol 3-P (|Glycerol 1-P) [MP-1.1]
+   1;Glycerol ((3TMS)) [MP-1.1]
+   1;Glutamate (3TMS) [MP-1.1]
+   1;Glucuronic_acid-3,6-lactone_(1MEOX)_(3TMS)_MP_657311_TRUE
+   1;Glucopyranoside, 1-O-methyl-, alpha- (4TMS)
+   1;Gluconic_acid,_2-oxo-_(1MEOX)_(5TMS)_BP_593592.06_TRUE
+   1;GlucoNaNte|GalactoNaNte [MP-1.1]
+   1;Galacturonic_acid_(1MEOX)_(5TMS)_MP_624653.5_TRUE
+   1;Galactopyranoside,_1-O-methyl-,_alpha-_(4TMS)_585464.62_TRUE
+   1;Galactonic_acid-1,4-lactone_(4TMS)_619566.38_PRED
+   1;FAME C8:0
+   1;FAME C26:0
+   1;FAME C18:0
+   1;FAME C16:0
+   1;FAME C14:0
+   1;FAME C12:0
+   1;FAME C10:0
+   1;Ethanolamine [MP-1.1]
+   1;Erythronic_acid-1,4-lactone_(2TMS)_462181.38_TRUE
+   1;Ergosterol_(1TMS)_1051145.12_PRED
+   1;Eicosanoic_acid_methyl_ester_(FAME_MIX)_818614.44_PRED
+   1;CinNaNmic_acid,_4-methoxy-,_cis-_(1TMS)_617496.56_TRUE
+   1;CinNaNmic_acid,_3-methoxy-,_trans-_(1TMS)_649428.75_TRUE
+   1;CinNaNmic_acid,_3-hydroxy-,_trans-_(2TMS)_653564.75_TRUE
+   1;CinNaNmic_acid,_3-hydroxy-,_cis-_(2TMS)_599148.38_TRUE
+   1;Caproic_acid,_2-oxo-_(1MEOX)_(1TMS)_326540.84_PRED
+   1;Calystegine_B2_(1MEOX)_(3TMS)_BP_620736.44_PRED
+   1;Butyro-1,4-lactam_(1TMS)_241244.02_PRED
+   1;Butyric_acid,_3-amino-,_DL-_(2TMS)_281258.31_PRED
+   1;Butanoic_acid,_4-amino-_(2TMS)_342578.41_TRUE
+   1;Benzoic_acid,_3-hydroxy-_(2TMS)_507250.44_TRUE
+   1;Benzoate (1TMS) [MP-1.1]
+   1;Aspartic_acid_(2TMS)_458076.97_TRUE
+   1;Aspartate (3TMS) [MP-1.1]
+   1;Arabitol_(5TMS)_503104.56_PRED
+   1;Allantoate
+   1;Alanine_(3TMS)_355868.03_PRED
+   1;Agmatine [MP-1.2]
+   1;Adipat, 2-Amino-
+   1;Adenosine 5-P (|ADP|ATP) (5TMS) [MP-1.1]
+   1;Aconitic_acid,_trans-_(3TMS)_600462.25_PRED
+   1;2-Piperidinecarboxylic_acid_(2TMS)_375026.84_TRUE
+   1;1-Pyrroline-2-carboxylate

@@ -11,7 +11,14 @@ read.file <- function(file) {
   return(data_no_missing)
 }
 
-plot.boxplot <- function() {
+overall.boxplot <- function(file, data) {
+  png(file=file, width = 1000, height = 600)
+  new_data <- data[2:dim(data)[2]]
+  boxplot(new_data, names = c(substr(colnames(new_data),4,7)))
+  dev.off()
+}
+
+plot.boxplot <- function(data) {
   filename = paste("Distribution/", toString(files$V1[i]),"/Boxplots/box", j, ".png", sep="")
   png(file=filename)
   boxplot(as.numeric(data[grep("hum",colnames(data))][j,]),
@@ -45,6 +52,13 @@ main <- function(permutation) {
   for (i in 1:dim(files)[1]) {
     file <- files$V1[i]
     data <- read.file(file)
+    if (permutation != 0) {
+      file_print = paste("Permutation", toString(permutation), "/Boxplots/", toString(file)," boxplot.png",sep="")
+    }
+    else {
+      file_print = paste("No permutation/", "/Boxplots/", toString(file)," boxplot.png",sep="")
+    }
+    overall.boxplot(file_print, data)
     N <- dim(data)[1]
     #data_no_na <- data_no_missing[which(rowSums(is.na(data_no_missing[grep("hum",colnames(data_no_missing))][j,]))<dim(data_no_missing[grep("hum",colnames(data_no_missing))][j,])[2]-1),]
     #data_no_na <- data_no_na[which(rowSums(is.na(data_no_na[grep("Wt",colnames(data_no_na))][j,]))<dim(data_no_na[grep("Wt",colnames(data_no_na))][j,])[2]-1),]
@@ -54,12 +68,11 @@ main <- function(permutation) {
     just.sign.p.value <- NULL
     indexes <- NULL
     just.indexes <- NULL
-    print(file)
     shuffed.data <- sample(data[,2:dim(data)[2]],dim(data)[2]-1)
     for (j in 2:dim(data)[1]) {
       if (rowSums(is.na(data[grep("hum",colnames(data))][j,])) < 
           dim(data[grep("hum",colnames(data))][j,])[2]-1) {
-        #plot.boxplot()
+        # plot.boxplot(data)
         if (permutation != 0) {
           result <- t.test(as.numeric(shuffed.data[,1:dim(data[grep("hum",colnames(data))])[2]][j,]),
                            as.numeric(shuffed.data[,(dim(data[grep("hum",colnames(data))])[2]+1):dim(shuffed.data)[2]][j,]))
@@ -75,9 +88,7 @@ main <- function(permutation) {
       }
     }
     
-    print("p-value")
     just.p.value <- just.p.value[!is.na(just.p.value)]
-    print("adjusted p-value")
     adjusted.p.value <- p.adjust(just.p.value, method="bonferroni")
     
     threshold <- 5e-2
@@ -88,11 +99,6 @@ main <- function(permutation) {
           just.indexes[length(just.indexes)+1] <- k
         }
       }
-      else {
-        print(file)
-        print("no significant metabolites")
-      }
-      
       if ((adjusted.p.value[k] < threshold) & (!is.null(data$putative.Compound[k]))) {
         if (!is.na(data$putative.Compound[k])) {
           sign.p.value[length(sign.p.value)+1] <- adjusted.p.value[k]
@@ -105,22 +111,15 @@ main <- function(permutation) {
       file_print = paste("Permutation", toString(permutation), "/", toString(file)," compounds adjusted p-value.csv",sep="")
     }
     else {
-      file_print = paste("Print/", toString(file)," compounds adjusted p-value.csv",sep="")
+      file_print = paste("No permutation/", toString(file)," compounds adjusted p-value.csv",sep="")
     }
     write.sign.comp.to.file(indexes, sign.p.value, data, file_print)
-
-    if (permutation != 0) {
-      file_print = paste("Permutation", toString(permutation), "/", toString(file)," compounds p-value.csv",sep="")
-    }
-    else {
-      file_print = paste("Print/", toString(file)," compounds p-value.csv",sep="")
-    }
     
     if (permutation != 0) {
-      file.p.value = paste("Permutation", toString(permutation), "/P_value/", toString(file), " p-value.png", sep="")
+      file.p.value = paste("Permutation", toString(permutation), "/P-value distribution/", toString(file), " p-value.png", sep="")
     }
     else {
-      file.p.value = paste("Print/P_value/", toString(file), " p-value.png", sep="")
+      file.p.value = paste("No permutation/P-value distribution/", toString(file), " p-value.png", sep="")
     }
     hist.p.value.to.file(just.p.value, N, file.p.value, "Distribution of p-value", "p-value")
   }
