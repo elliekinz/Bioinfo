@@ -12,9 +12,10 @@ read.file <- function(file) {
 }
 
 overall.boxplot <- function(file, data) {
-  png(file=file, width = 1000, height = 600)
+  png(file=file, width = 1400, height = 700)
   new_data <- data[2:dim(data)[2]]
-  boxplot(new_data, names = c(substr(colnames(new_data),1,7)))
+  column.names <- gsub("_","",substr(colnames(new_data),1,7))
+  boxplot(new_data, names = c(column.names))
   dev.off()
 }
 
