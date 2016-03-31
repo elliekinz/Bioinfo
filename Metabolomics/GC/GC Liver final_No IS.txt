@@ -1,4 +1,4 @@
-putativ Compound	hum_101_5 _liv	hum_102_5 _liv	hum_103_5 _liv	hum_104_5 _liv	hum_106_5 _liv	hum_121_5 _liv	hum_141_5 _liv	hum_153_5 _liv	hum_98_5 _liv	Wt_132_5 _liv	Wt_133_5 _liv	Wt_134_5 _liv	Wt_135_5 _liv	Wt_142_5 _liv	Wt_147_5 _liv	Wt_148_5 _liv	Wt_152_5 _liv	Wt_91_5 _liv	Wt_wt5_5 _liv
+putative Compound	hum_101_5 _liv	hum_102_5 _liv	hum_103_5 _liv	hum_104_5 _liv	hum_106_5 _liv	hum_121_5 _liv	hum_141_5 _liv	hum_153_5 _liv	hum_98_5 _liv	Wt_132_5 _liv	Wt_133_5 _liv	Wt_134_5 _liv	Wt_135_5 _liv	Wt_142_5 _liv	Wt_147_5 _liv	Wt_148_5 _liv	Wt_152_5 _liv	Wt_91_5 _liv	Wt_wt5_5 _liv
 2-Piperidinecarboxylic_acid_(2TMS)_375026.84_TRUE	7875	6546	4754	4100	6359	6557	4473	2912	7181	5992	4454	5487	4779	7027	4833	5284	3713	611	4684
 4-Hydroxyphenyl-beta-glucopyranoside_(5TMS)_872154.19_TRUE	40705	16203	7385	7792	12866	5429	5118	42682	10095	6636	8594	4844	23525	17448	20702	19044	47903	49652	91168
 Abietic_acid_(1TMS)_882153.31_TRUE	1909	702	500	261	454	223	235	1438	585	218	298	175	951	578	701	584	1348	2423	2807
